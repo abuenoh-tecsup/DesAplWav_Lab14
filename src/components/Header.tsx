@@ -12,6 +12,7 @@ export default function Header() {
           >
             {personalInfo.name}
           </Link>
+
           <ul className="flex gap-6">
             <li>
               <Link
@@ -21,6 +22,7 @@ export default function Header() {
                 Inicio
               </Link>
             </li>
+
             <li>
               <Link
                 href="/projects"
@@ -29,12 +31,22 @@ export default function Header() {
                 Proyectos
               </Link>
             </li>
+
             <li>
               <Link
                 href="/about"
                 className="text-gray-700 hover:text-blue-600 transition"
               >
                 Sobre Mí
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/contact"
+                className="text-gray-700 hover:text-blue-600 transition"
+              >
+                Contacto
               </Link>
             </li>
           </ul>

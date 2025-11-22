@@ -25,56 +25,56 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Sobre Mí</h1>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {/* Columna de la Imagen */}
+
+          {/* Avatar optimizado */}
           <div className="md:col-span-1">
             <div className="relative w-full aspect-square rounded-lg overflow-hidden">
               <Image
                 src={personalInfo.avatar}
                 alt={personalInfo.name}
                 fill
+                priority
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/2wCEAAkGBxAQEBUQDxAQFRAVFRUVFRUQFRUVFRUVFRUXFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lICYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAJ8BPgMBIgACEQEDEQH/xAAYAAADAQEAAAAAAAAAAAAAAAAABQYHCP/EAB8QAQEAAgEEAwAAAAAAAAAAAAABAgMREiExBCJBUf/EABcBAAMBAAAAAAAAAAAAAAAAAAABBAX/xAAcEQEAAgIDAQAAAAAAAAAAAAABAAIRAxIhMUH/2gAMAwEAAhEDEQA/AM8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z"
                 className="object-cover"
-                loading="lazy"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>
           </div>
 
-          {/* Columna de la Descripción */}
+          {/* Descripción */}
           <div className="md:col-span-2">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               ¡Hola! Soy {personalInfo.name}
             </h2>
             <div className="prose text-gray-700 space-y-4">
               <p>
-                Soy un desarrollador full stack apasionado por crear
-                experiencias web excepcionales. Con más de X años de
-                experiencia, me especializo en construir aplicaciones modernas y
-                escalables.
+                Soy un desarrollador full stack apasionado por crear experiencias web
+                excepcionales. Me especializo en construir aplicaciones modernas y escalables.
               </p>
               <p>
-                Mi enfoque está en escribir código limpio, mantenible y
-                eficiente, siempre buscando las mejores prácticas y las últimas
-                tecnologías para entregar productos de alta calidad.
+                Mi enfoque está en escribir código limpio, mantenible y eficiente, siempre
+                buscando las mejores prácticas y las últimas tecnologías.
               </p>
               <p>
-                Cuando no estoy programando, me gusta contribuir a proyectos de
-                código abierto, escribir artículos técnicos y aprender nuevas
-                tecnologías.
+                También disfruto contribuir a proyectos open-source y escribir artículos técnicos.
               </p>
             </div>
           </div>
+
         </div>
 
-        {/* Skills Section con lazy loading implícito */}
+        {/* Skills */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
             Habilidades Técnicas
           </h2>
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {skills.map((skill) => (
               <div
                 key={skill}
-                className="bg-white p-4 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow"
+                className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow"
               >
                 <p className="font-semibold text-gray-800">{skill}</p>
               </div>

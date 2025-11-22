@@ -37,8 +37,8 @@ export const personalInfo = {
   title: 'Backend Developer',
   description: 'Desarrollador experimientando en Django, Spring Boot y Express',
   email: 'alvarobuenoh@gmail.com',
-  github: 'https://github.com/tuusuario',
-  linkedin: 'https://linkedin.com/in/tuusuario',
+  github: 'https://github.com/alvarojbh',
+  linkedin: 'https://linkedin.com/in/alvaro-bueno-huamanyauri',
   siteUrl: 'https://tuportafolio.com',
-  avatar: 'https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  avatar: '/images/avatar.jpg',
 };
