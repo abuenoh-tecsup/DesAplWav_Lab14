@@ -14,9 +14,11 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-gray-900 mb-4">Mis Proyectos</h1>
-      <p className="text-lg text-gray-600 mb-12">
+    <main className="container mx-auto px-4 py-12 text-white">
+      
+      <h1 className="text-4xl font-bold mb-4">Mis Proyectos</h1>
+
+      <p className="text-lg text-gray-300 mb-12">
         Una colección de proyectos en los que he trabajado
       </p>
 
@@ -28,6 +30,7 @@ export default function ProjectsPage() {
           <ProjectCard key={project.slug} project={project} />
         ))}
       </section>
+
     </main>
   );
 }

@@ -53,20 +53,21 @@ export default async function ProjectDetailPage({ params }: Props) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 text-white">
       <Link
         href="/projects"
-        className="text-blue-600 hover:underline mb-6 inline-block"
+        className="text-blue-400 hover:underline mb-6 inline-block"
       >
         &lt; Volver a Proyectos
       </Link>
 
       <article>
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <h1 className="text-4xl font-bold mb-4">
           {project.title}
         </h1>
 
-        <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden">
+        {/* Imagen sin rounded */}
+        <div className="relative w-full h-96 mb-8 overflow-hidden rounded-none">
           <Image
             src={project.image}
             alt={project.title}
@@ -77,19 +78,18 @@ export default async function ProjectDetailPage({ params }: Props) {
           />
         </div>
 
-        <p className="text-lg text-gray-700 mb-6">
+        <p className="text-lg text-gray-300 mb-6">
           {project.description}
         </p>
 
         <div className="mb-6">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">
-            Tecnologías Utilizadas
-          </h2>
+          <h2 className="text-2xl font-bold mb-3">Tecnologías Utilizadas</h2>
+
           <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                className="bg-gray-800 text-gray-200 px-3 py-1 text-sm rounded-none border border-gray-700"
               >
                 {tech}
               </span>
@@ -103,7 +103,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+              className="bg-blue-600 text-white px-6 py-3 rounded-none hover:bg-blue-700 transition"
             >
               &gt; Ver Demo
             </a>
@@ -114,7 +114,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition"
+              className="bg-gray-900 text-white px-6 py-3 rounded-none hover:bg-black transition"
             >
               &gt; Ver Código
             </a>

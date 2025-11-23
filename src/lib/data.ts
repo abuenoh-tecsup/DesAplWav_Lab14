@@ -35,7 +35,7 @@ export const projects: Project[] = [
 export const personalInfo = {
   name: 'Alvaro Bueno Huamanyauri',
   title: 'Backend Developer',
-  description: 'Desarrollador experimientando en Django, Spring Boot y Express',
+  description: 'Estudiante de Diseño y Desarrollo de Software enfocado en backend, con experiencia en Django, Spring y Express, y sólida base en desarrollo web y bases de datos.',
   email: 'alvarobuenoh@gmail.com',
   github: 'https://github.com/alvarojbh',
   linkedin: 'https://linkedin.com/in/alvaro-bueno-huamanyauri',

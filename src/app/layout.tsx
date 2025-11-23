@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { personalInfo } from "@/lib/data";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -72,10 +72,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={inter.variable}>
+    <html lang="es" className={manrope.variable}>
       <body className="flex flex-col min-h-screen">
         <Header />
-        <main className="grow bg-gray-50">{children}</main>
+        <main className="grow bg-grid">{children}</main>
         <Footer />
       </body>
     </html>
