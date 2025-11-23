@@ -25,7 +25,6 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold text-white mb-8">Sobre Mí</h1>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-
           {/* Avatar optimizado */}
           <div className="md:col-span-1">
             <div className="relative w-full aspect-square rounded-none overflow-hidden">
@@ -49,19 +48,26 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-invert text-gray-300 space-y-4">
               <p>
-                Soy un desarrollador full stack apasionado por crear experiencias web
-                excepcionales. Me especializo en construir aplicaciones modernas y escalables.
+                Soy estudiante de Diseño y Desarrollo de Software en TECSUP, con
+                enfoque en desarrollo backend y creación de soluciones
+                eficientes y bien estructuradas.
               </p>
+
               <p>
-                Mi enfoque está en escribir código limpio, mantenible y eficiente, siempre
-                buscando las mejores prácticas y las últimas tecnologías.
+                He trabajado con frameworks como <strong>Django</strong>,{" "}
+                <strong>Spring</strong> y<strong> Express</strong>, aplicando
+                buenas prácticas, arquitectura limpia y manejo de bases de datos
+                relacionales y no relacionales.
               </p>
+
               <p>
-                También disfruto contribuir a proyectos open-source y escribir artículos técnicos.
+                También tengo experiencia con metodologías ágiles, control de
+                versiones con
+                <strong> Git/GitHub</strong> y un nivel avanzado de inglés que
+                me permite investigar y aprender con rapidez.
               </p>
             </div>
           </div>
-
         </div>
 
         {/* Skills */}
