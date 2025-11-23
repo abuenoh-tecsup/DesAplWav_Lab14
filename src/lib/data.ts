@@ -39,6 +39,6 @@ export const personalInfo = {
   email: 'alvarobuenoh@gmail.com',
   github: 'https://github.com/alvarojbh',
   linkedin: 'https://linkedin.com/in/alvaro-bueno-huamanyauri',
-  siteUrl: 'https://tuportafolio.com',
+  siteUrl: 'https://www.bueno-lab14.duckdns.org',
   avatar: '/images/avatar.jpg',
 };
